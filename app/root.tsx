@@ -9,7 +9,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Welcome to blog-remix</h1>
         <Outlet />
         <Scripts />
         {/* to make hot-reload work, ref: https://remix.run/docs/en/main/start/quickstart#development-workflow */}
