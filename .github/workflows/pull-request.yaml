@@ -1,0 +1,17 @@
+name: Pull request
+on:
+  pull_request:
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Nodejs
+        uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm i
+      - name: Type-check
+        run: npm run typecheck
